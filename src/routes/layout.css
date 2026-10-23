@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', sans-serif;
+  --font-ethiopic: 'Noto Sans Ethiopic', sans-serif;
+  
+  --color-gold-50: #fbf8eb;
+  --color-gold-100: #f5eed0;
+  --color-gold-200: #ecdda4;
+  --color-gold-300: #dfc471;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #bd9526;
+  --color-gold-600: #9e751d;
+  --color-gold-700: #7e571b;
+  --color-gold-800: #68461c;
+  --color-gold-900: #573a1c;
+
+  --color-burgundy-500: #800020;
+  --color-burgundy-600: #6b001b;
+  --color-burgundy-700: #550015;
+}
+
+/* Custom animation for string vibration */
+@keyframes stringVibrate {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.4); }
+}
+
+.animate-vibrate {
+  animation: stringVibrate 0.15s ease-in-out infinite;
+}
